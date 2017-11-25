@@ -1,0 +1,605 @@
+@charset "utf-8";
+
+/*--------------------------------------------------------------------------------------------------
+CSS Styles for <Project Name>.
+
+version:   1.0
+--------------------------------------------------------------------------------------------------*/
+
+
+/* =Typography
+--------------------------------------------------------------------------------------------------*/
+
+/* Setting up the fonts */
+body {
+	background: #f1f1f1;
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+
+}
+
+/* End Typography
+--------------------------------------------------------------------------------------------------*/
+
+
+/* =Main
+--------------------------------------------------------------------------------------------------*/
+.w {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+/* Main
+--------------------------------------------------------------------------------------------------*/
+
+
+/* =Header
+--------------------------------------------------------------------------------------------------*/
+.header {
+	background: #69d2e7;
+	border-top: 5px solid #fa6900;
+	min-height: 346px;
+	padding: 0 0 119px;
+}
+
+
+.header .w .logo {
+	width: 212px; 
+	height: 74px;
+	background: url(../img/logo.png) no-repeat;
+	text-indent: -9999px;
+	float: left;
+	margin: 19px 0 0;
+
+}
+.header h1 {
+	text-align: center;
+	clear: both;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 73px 0 0 0;
+
+}
+.header h1 strong {
+	font-size: 31px;
+	font-weight: 700;
+	display: block;
+	padding: 2px 0 0 0;
+}
+/* End Header
+--------------------------------------------------------------------------------------------------*/
+
+
+/* =Headings
+--------------------------------------------------------------------------------------------------*/
+h1 {
+	font-size: 83px;
+	font-weight: 700;
+	
+
+}
+
+/* End Headings
+--------------------------------------------------------------------------------------------------*/
+
+
+/* =Links
+--------------------------------------------------------------------------------------------------*/
+
+/* End Links
+--------------------------------------------------------------------------------------------------*/
+
+
+/* =Branding
+--------------------------------------------------------------------------------------------------*/
+
+/* End Branding
+--------------------------------------------------------------------------------------------------*/
+
+
+/* =Main Nav
+--------------------------------------------------------------------------------------------------*/
+.nav {
+	float: right;
+	padding: 47px 0 0 0;
+
+}
+
+.nav li {
+	float: left;
+	font-size: 18px;
+	padding: 0 0 0 29px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.nav li a {
+	color: #fff;
+	text-decoration: none;
+}
+.nav li a:hover, .nav li.active a {
+	color: #005aab;
+}
+
+
+/* End Main Nav
+--------------------------------------------------------------------------------------------------*/
+
+
+/* =Sub Nav
+--------------------------------------------------------------------------------------------------*/
+
+/* End Sub Nav
+--------------------------------------------------------------------------------------------------*/
+
+
+/* =Main Content
+--------------------------------------------------------------------------------------------------*/
+.about-block {	
+	padding: 0 0 36px 0;
+}
+.about-block .block {
+	background: #fff;
+	max-width: 770px;
+	margin: -99px auto 65px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+	padding: 41px 32px 23px; 
+	text-align: center;
+}
+.about-block .block h2 {
+	font-size: 36px;
+	font-weight: 700;
+	text-transform: uppercase;
+	position: relative;
+	display: inline-block;
+	padding: 0 100px 23px;
+	margin: 0 0 27px;
+}
+
+.about-block .block h2:after {
+	position: absolute;
+	content: '';
+	bottom: 0;
+	left: 0;
+	display: block;
+	background: #d5d5d5;
+	height: 1px;
+	width: 100%;
+}
+
+.about-block .block p {
+	line-height: 34px;
+	font-weight: 300px;
+	font-size: 22px;
+	text-align: left;
+}
+
+.list {
+	width: 100%;
+	display: table;
+}
+.list li {
+	display: table-cell;
+	width: 33%;
+	text-align: center;
+}
+.list li a {
+	text-decoration: none;
+	display: inline-block;
+	color: #000;
+}
+.list li figure {
+	width: 162px;
+	height: 162px;
+	display: block;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	margin: auto;
+	background: #fff url(../img/sprite.png) no-repeat 35px 35px;
+}
+.list li a:hover figure {
+	background-position: 35px -162px;
+}
+.list li.ico2 figure {
+	background-position: -301px 35px;
+}
+.list li.ico2 a:hover figure {
+	background-position: -301px -162px;
+}
+.list li.ico3 figure {
+	background-position: -637px 35px;
+}
+.list li.ico3 a:hover figure {
+	background-position: -637px -162px;
+} 
+
+.list li a:hover figure {
+	background-color: #69d2e7;
+}
+.list li a span {
+	font-size: 24px;
+	display: block;
+	line-height: 29px;
+	padding: 22px 0 0 0;
+	max-width: 220px;
+}
+
+/*--------------------ORANGE-block-----------------------*/
+
+
+.orange-block{
+	padding: 35px 0 94px 0;
+	background: #fa6900;
+
+}
+.orange-block p {
+	font-size: 22px;
+	line-height: 34px;
+	color: #fff;
+	text-align: center;
+	font-weight: 300;
+	max-width: 730px;
+	margin: auto;
+	padding-bottom:  57px;
+}
+.orange-block figure img {
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+.orange-block .bx-wrapper {
+	position: relative;
+}
+.orange-block .bx-controls {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	margin-top: -15px;
+}
+.orange-block .bx-controls .bx-prev, .orange-block .bx-controls .bx-next {
+	float: left;
+	background: #fff;
+	width: 27px;
+	height: 27px;
+	border: 2px solid #7f7f7f;
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+	text-indent: -9999px;
+	margin: 0 26px;
+	background: #fff url(../img/spr.png) no-repeat 48% 5px;
+}
+.orange-block .bx-controls .bx-prev:hover {
+	background-position: 48% -26px;
+}
+.orange-block .bx-controls a:hover {
+	border-color: #fdb988;
+}
+.orange-block .bx-controls .bx-next {
+	float: right;
+	background-position: 55% -59px;
+}
+.orange-block .bx-controls .bx-next:hover {
+	background-position: 56% -90px;
+}
+
+/*-----------------------Block-Slider--------------------------------*/
+
+.block-slider {
+	text-align: center;
+	padding: 51px 0 33px 0;
+}
+
+.slider-desc figure {}
+.slider-desc li {}
+.slider-desc figure img {
+	border-radius: 100%;
+	-webkit-border-radius: 100%;
+}
+.slider-desc h2 {
+	font-size: 26px;
+	font-weight: 700;
+	padding: 28px 0 3px 0;
+}
+.slider-desc h3 {
+	font-size: 22px;
+	font-weight: 300;
+	padding: 0 0 30px 0; 
+}
+.slider-desc p {
+	max-width: 675px;
+	font-size: 16px;
+	line-height: 23px;
+	font-weight: 300;
+	margin: auto;
+}
+
+
+/*  pager  */
+
+.block-slider .bx-controls {
+	padding: 72px 0 0 0;
+}
+.block-slider .bx-controls  .bx-pager-item {
+	display: inline-block;
+	padding: 0 12px;
+}
+.block-slider .bx-controls  .bx-pager-item a {
+	display: block;
+	width: 18px;
+	height: 18px;
+	background: #fff;
+	border-radius: 18px;
+	-webkit-border-radius: 18px;
+	-webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.3);
+	box-shadow: 0 0 5px 0 rgba(0,0,0,0.3);
+	text-indent: -9999px;
+	position: relative;
+}
+
+.block-slider .bx-controls  .bx-pager-item a:hover, .desc-block .bx-controls  .bx-pager-item a.active {
+	background: #69d2e7;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.block-slider .bx-controls  .bx-pager-item a:hover:before,  .desc-block .bx-controls  .bx-pager-item a.active:before {
+	border: 2px solid #fff;
+	content: '';
+	display: block;
+	width: 18px;
+	height: 18px;
+	border-radius: 22px;
+	-webkit-border-radius: 22px;
+	position: absolute;
+	top: -2px;
+	left: -2px;
+}
+
+.col {}
+.col h1 {}
+.col h2 {}
+.col p {}
+
+
+/* -------NEWs block-------*/
+.news-block {}
+.news-block .left {
+	max-width: 474px;
+}
+.news-block .right {
+	float: right;
+	width: 375px;
+} 
+.news-block .right .title {}
+.news-block .right ul {}
+.news-block .right figure {
+	float: left;
+	padding: 0 27px 0 0;
+}
+.news-block .right ul li {
+	overflow: hidden;
+	padding: 0 0 29px;
+}
+.news-block .right ul li a {}
+.news-block .right .text {
+	float: left;
+	max-width: 245px;
+}
+.news-block .right h2 {
+	text-overflow: ellipsis;
+	width: 200px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.news-block .right p {}
+
+/* =End Main Content
+--------------------------------------------------------------------------------------------------*/
+
+
+/* =Secondary Content
+--------------------------------------------------------------------------------------------------*/
+
+/* End Secondary Content
+--------------------------------------------------------------------------------------------------*/
+
+
+/* =Footer
+--------------------------------------------------------------------------------------------------*/
+
+/* End Footer
+--------------------------------------------------------------------------------------------------*/
+
+
+/* =Forms
+--------------------------------------------------------------------------------------------------*/
+
+/* Removing fieldset borders (remove if you want to keep the defaults defined in Normalization) */
+
+/* End Forms
+--------------------------------------------------------------------------------------------------*/
+
+/* =Tables
+--------------------------------------------------------------------------------------------------*/
+
+/* End Tables
+--------------------------------------------------------------------------------------------------*/
+
+
+/* =Misc 1
+--------------------------------------------------------------------------------------------------*/
+
+/* End Misc 1
+--------------------------------------------------------------------------------------------------*/
+
+
+/* =Misc 2
+--------------------------------------------------------------------------------------------------*/
+
+/* End Misc 2
+--------------------------------------------------------------------------------------------------*/
+
+
+/* =Additional 1
+--------------------------------------------------------------------------------------------------*/
+.slicknav_menu {
+ display:none;
+}
+.slicknav_btn {
+  position: relative;
+  display: block;
+  vertical-align: middle;
+  float: right;
+  padding: 0.438em 0.625em 0.438em 0.625em;
+  line-height: 1.125em;
+  cursor: pointer; }
+  .slicknav_btn .slicknav_icon-bar + .slicknav_icon-bar {
+    margin-top: 0.188em; }
+
+.slicknav_menu {
+  *zoom: 1; }
+  .slicknav_menu .slicknav_menutxt {
+    display: block;
+    line-height: 1.188em;
+    float: left; }
+  .slicknav_menu .slicknav_icon {
+    float: left;
+    width: 1.125em;
+    height: 0.875em;
+    margin: 0.188em 0 0 0.438em; }
+    .slicknav_menu .slicknav_icon:before {
+      background: transparent;
+      width: 1.125em;
+      height: 0.875em;
+      display: block;
+      content: "";
+      position: absolute; }
+  .slicknav_menu .slicknav_no-text {
+    margin: 0; }
+  .slicknav_menu .slicknav_icon-bar {
+    display: block;
+    width: 1.125em;
+    height: 0.125em;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25); }
+  .slicknav_menu:before {
+    content: " ";
+    display: table; }
+  .slicknav_menu:after {
+    content: " ";
+    display: table;
+    clear: both; }
+
+.slicknav_nav {
+  clear: both; }
+  .slicknav_nav ul {
+    display: block; 
+	text-align: center;}
+  .slicknav_nav li {
+    display: block; }
+  .slicknav_nav .slicknav_arrow {
+    font-size: 0.8em;
+    margin: 0 0 0 0.4em; }
+  .slicknav_nav .slicknav_item {
+    cursor: pointer; }
+    .slicknav_nav .slicknav_item a {
+      display: inline; }
+  .slicknav_nav .slicknav_row {
+    display: block; }
+  .slicknav_nav a {
+    display: block; }
+  .slicknav_nav .slicknav_parent-link a {
+    display: inline; }
+
+.slicknav_brand {
+  float: left; }
+
+.slicknav_menu {
+  font-size: 16px;
+  box-sizing: border-box;
+  background: #4c4c4c;
+  padding: 5px; }
+  .slicknav_menu * {
+    box-sizing: border-box; }
+  .slicknav_menu .slicknav_menutxt {
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 0 1px 3px #000; }
+  .slicknav_menu .slicknav_icon-bar {
+    background-color: #fff; }
+
+.slicknav_btn {
+  margin: 5px 5px 6px;
+  text-decoration: none;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #222; }
+
+.slicknav_nav {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  font-size: 0.875em;
+  list-style: none;
+  overflow: hidden; }
+  .slicknav_nav ul {
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0 0 0 20px; }
+  .slicknav_nav .slicknav_row {
+    padding: 5px 10px;
+    margin: 2px 5px; }
+    .slicknav_nav .slicknav_row:hover {
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px;
+      background: #ccc;
+      color: #fff; }
+  .slicknav_nav a {
+    padding: 5px 10px;
+    margin: 2px 5px;
+    text-decoration: none;
+    color: #fff; }
+    .slicknav_nav a:hover {
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px;
+      background: #ccc;
+      color: #222; }
+  .slicknav_nav .slicknav_txtnode {
+    margin-left: 15px; }
+  .slicknav_nav .slicknav_item a {
+    padding: 0;
+    margin: 0; }
+  .slicknav_nav .slicknav_parent-link a {
+    padding: 0;
+    margin: 0; }
+
+.slicknav_brand {
+  color: #fff;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 7px 12px;
+  height: 44px; }
+
+
+/* End Additional 1
+--------------------------------------------------------------------------------------------------*/
+
+
+/* =Additional 2
+--------------------------------------------------------------------------------------------------*/
+
+/* End Additional 2
+--------------------------------------------------------------------------------------------------*/

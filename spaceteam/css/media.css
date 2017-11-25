@@ -1,0 +1,179 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    .icon-arrow-left.owl-direction  {
+        left: -70px;
+}
+    .icon-arrow-right.owl-direction {
+        right: -50px;
+    }
+    .testimony .vcard {
+        margin: 0 20px;
+    }
+    .testimony .vcard img {
+        width: 170px;
+        height: 170px;
+    }
+    .design .spacer {
+        height: 88px;
+    }
+   
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+     .design-content .image {
+        max-width: 60%;
+         margin: 0 auto;
+    }
+     .testimony .vcard {
+        margin: 0 20px;
+    }
+    .testimony .vcard img {
+        width: 120px;
+        height: 120px;
+    }
+    .testimony blockquote p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    #footer .info {
+        margin-top: 20px;
+        text-align: center;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .intro .text {
+  bottom: 0em;
+    }
+    .design .text-wrap .row {
+  margin: 0;
+}
+    .design .design-lead {
+    font-size: 17px;
+    }
+    .design p {
+  font-size: 1.2em;
+}
+    .design .text-wrap .text {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .testimony .vcard {
+        width: 120px;
+        height: 120px;
+    }
+    .headhesive--stick {
+        display: none;
+    }
+    .headhesive {
+    transform: translateY(0);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    opacity: 1;
+    }
+    
+    .navbar-default .navbar-collapse {
+        background: rgba(0, 0, 0, .8);
+        border: none;
+        text-align: center;
+        -webkit-box-shadow: 1px 1px 100px 20px #0D0D0D;
+        box-shadow: 1px 1px 100px 20px #0D0D0D;
+    }
+    
+    .header img {
+        border-style: none;
+        position: absolute;
+        top: -80px;
+        right: 0;
+    }
+       
+    .subsc .btn, .form-group {
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+    .intro .text {
+  bottom: 0;
+}
+    .intro .intro-img {
+  bottom: -10em;
+        max-width: 100%
+}
+    
+    .design .spacer {
+        height: 30px;
+    }
+    .testimony {
+        padding-top: 3em;
+    }
+    .testimony .vcard {
+        margin: 0 auto 20px auto;
+    }
+    .owl-carousel .owl-item img {
+      display: block;
+      width: 83%;
+    }
+    .testimony blockquote {
+        padding: 0;
+        border-left: none;
+        color: #fff;
+    }
+    .testimony .author-lead {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .col-xxs-12 {
+        float: none;
+        width: 100%;
+    }
+    .testimony blockquote {
+        text-align: center;
+    }
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+        .testimony figure {
+    
+        }
+      
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

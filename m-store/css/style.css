@@ -1,0 +1,1022 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+html {height: 100%;}
+body {
+	height: 100%;
+	font: 13px/16px Arial, Tahoma, sans-serif;
+	color: #000;
+	background: #fff url(../img/bg.jpg) repeat;
+}
+ol, ul {list-style: none;}
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a, a:hover {color: #000; text-decoration: none;}
+
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after {clear: both;}
+
+.left {float:left;}
+.right {float:right;}
+.text-right {text-align: right;}
+.text-center {text-align: center;}
+
+.center {
+	width: 960px;
+	margin: 0 auto;
+}
+
+/* Styles */
+
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* чтобы во всех браузерах отображалась высота */
+}
+.panel-top {
+    background: #2a2b2c;
+    border-top: 3px solid #cc3333;
+    height: 33px;
+}
+.social {
+    padding: 4px 0;
+    float: left;
+}
+.social a {
+    display: inline-block;
+    vertical-align: middle;
+    height: 23px;
+    width: 23px;
+    background: url(../img/sprite-social.png) no-repeat center;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    
+}
+
+.social a.s-fb {
+    background-position: 0 0;
+}
+.social a.s-dr {
+    background-position: -23px 0;
+}
+.social a.s-tw {
+    background-position: -46px 0;
+}
+.social a.s-mail {
+    background-position: -69px 0;
+}
+.social a.s-vimeo {
+    background-position: -92px 0;
+}
+.login {
+    float: right;
+    padding-top: 7px;
+}
+.login a,
+.login span {
+    color: #fff;
+}
+.login a:hover {
+    text-decoration: underline;
+}
+
+.basket {
+    background: #c33 url(../img/basket.png) no-repeat 10px 7px;
+    width: 90px;
+    height: 45px;
+    float: right;
+    margin-left: 25px;
+    border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    overflow: hidden;
+}
+.basket a {
+    display: block;
+    height: 45px;
+    color: #fff;
+    padding: 15px 0 0 40px;
+}
+.header {
+    padding: 18px 0;
+}
+.logo img,
+.logo span {
+    display: inline-block;
+    vertical-align: middle;
+}
+.logo span {
+    font-size: 30px;
+}
+.nav {
+    margin-top: 25px;
+}
+.nav li {
+    float: left;
+    position: relative;
+}
+
+/* Конструкция с плюсом ниже для того чтобы левый отступ не применялся к первому элементу */
+
+.nav li + li {
+    margin-left: 30px;
+}
+.nav li:before {
+    border-top: 4px solid #efc539;
+    content: '';
+    display: none;
+    width: 35px;
+    position: absolute;
+    top: -17px;
+    left: 50%;
+    margin-left: -18px;  
+}
+.nav li:hover:before {
+    display: block;
+    
+}
+.nav li a {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.home {
+    border-bottom: 1px solid #e0e0e0;
+    background: #fff;
+    padding-bottom: 6px;
+    margin-bottom: 40px;
+}
+.home-bg {
+    background: #CC3333;
+    padding: 20px 0;
+    box-shadow: inset 0 5px 5px rgba(0,0,0, .25);
+    -moz-box-shadow: inset 0 5px 5px rgba(0,0,0, .25);
+}
+.title-home {
+    font-size: 28px;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .25);
+    -moz-text-shadow: 0 1px 1px rgba(0, 0, 0, .25);
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+.breadcrums {
+    margin-top: 10px;
+}
+.breadcrums li {
+    float: left;
+    
+}
+.breadcrums li a,
+.breadcrums li span {
+    font-size: 12px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .25);
+    -moz-text-shadow: 0 1px 1px rgba(0, 0, 0, .25);
+    color: #fff;
+} 
+ .sp {
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 16px;
+}
+.breadcrums li a:hover {
+    text-decoration: underline; 
+}
+.link-home {
+    background: url(../img/home.png) no-repeat;
+    width: 36px;
+    height: 33px;
+    display: block;
+    float: right;
+    margin-top: 8px;
+} 
+
+/* Sorting */
+
+.sorting {
+	margin-bottom: 40px;
+	padding: 18px 20px;
+	border: 1px solid #eaeaea;
+	background: #fff;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.s-category {
+	float: left;
+	padding-top: 2px;
+}
+.s-category li {
+	padding: 0 15px 0 9px;
+	float: left;
+	background: url(../img/dotes.png) no-repeat right 4px;
+}
+.s-category li:first-child {padding-left: 0;}
+.s-category li:last-child {
+	background-image: none;
+	padding-right: 0;
+}
+.s-category a {
+	line-height: 16px;
+	color: #1E1E20;
+	text-transform: uppercase;
+}
+.s-category a:hover,
+.s-category li.active a {
+	color: #000;
+}
+
+.sel-sorting {
+    float: right;
+    margin-right: 80px;
+}
+
+.s-list {float: right;}
+.s-list a {
+	display: inline-block;
+	vertical-align: middle;
+}
+.s-list a + a {margin-left: 10px;}
+.ic-squares {
+	width: 28px;
+	height: 20px;
+	background: url(../img/squares.png) no-repeat;
+}
+.ic-list {
+	width: 30px;
+	height: 20px;
+	background: url(../img/list.png) no-repeat;
+}
+
+/* Middle */
+
+
+.content {
+    margin-right: 285px;
+}
+.product {
+    width: 215px;
+    height: 370px;
+    background: #fff;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 3px rgba(0,0,0, .15);
+    -moz-box-shadow: 0 2px 3px rgba(0,0,0, .15);
+    float: left;
+    margin: 0 15px 15px 0;
+}
+.product:nth-child(3n) {
+    margin-right: 0;
+}
+.p-img {
+    position: relative;
+    height: 210px;
+    width: 210px;    overflow: hidden;
+    border: 1px solid #000;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0,0,0, .75);
+    -moz-box-shadow: 0 1px 5px rgba(0,0,0, .75);
+}
+.sale {
+    position: absolute;
+    background: rgba(204,51,51, .6);
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    z-index: 3;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.product h6, .product-info h6 {
+    margin: 10px 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+.product h6 span {
+    font-weight: normal;
+    font-style: italic;
+}
+.product h6 a:hover, .product-info h6 a:hover {
+    text-decoration: underline;
+}
+.p-footer {
+    padding: 0 8px 15px;
+}
+.p-footer p {
+    margin-bottom: 15px;
+    line-height: 20px;
+}
+.p-footer p strong {
+    font-weight: bold;  
+}
+
+.price, .price-new, .price-lg {
+    display: inline-block;
+    text-decoration: line-through;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.price-new {
+    line-height: 16px;
+    color: #fff;
+    padding: 1px 3px;
+    background: #c33;
+}
+.price-lg {
+    font-size: 16px;
+}
+.add-cart {
+    display: block;
+    padding: 5px 8px;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #fff;
+    background: #1e1e20;
+    border-radius: 5px;
+    -moz-border-radius: 5px;  
+}
+.add-cart:hover {
+    background: #888;
+}
+
+.rate {
+    margin: 10px 15px;
+    margin-left: 0;
+    width: 76px;
+    height: 15px;
+    background: url(../img/star.png) repeat-x; 
+}
+.rate div {
+    background: url(../img/red-star.png) repeat-x;
+    height: 100%;
+}
+
+.pagination {
+    margin: 20px 0;
+    background: #fff;
+    border: 1px solid #eaeaea;
+    padding: 15px;
+}
+.pagination ul li {
+    float: left;
+    margin-right: 10px;
+}
+.pagination ul a {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+}
+.pagination ul li.active a {
+    color: #cc3333;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+    width: 240px;
+    float: right;
+}
+.s-title {
+    position: relative;
+    text-transform: uppercase;
+    font: normal 18px/20px 'Oswald', sans-serif;
+    color: #2a2b2c;
+    margin: 0 0 10px;
+    padding: 0 0 15px 15px;
+    border-bottom: 1px dotted #d5d5d5;
+}
+.s-title-br {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    width: 40px;
+    height: 7px;
+    background: #cc3333;
+    margin-top: -3px;
+}
+
+.s-products {
+    margin: 15px 0 0;
+    padding-left: 15px;
+}
+.s-product-item {
+    margin-bottom: 10px;
+}
+.s-img {
+    height: 90px;
+    width: 90px;
+    float: left;
+    overflow: hidden;
+    padding: 5px;
+    background: #28292a;
+}
+.s-img img {
+    display: block;
+    width: 100%;
+}
+
+.product-info {
+    padding-top: 10px;
+    margin-left: 105px;
+}
+
+.product-info h6 {
+    margin-top: 0;
+    
+}
+.ic-comment, .ic-comment-white {
+    display: inline-block;
+    vertical-align: middle;
+    width: 13px;
+    height: 12px;
+    background: url(../img/comment.png) no-repeat center;
+    margin-right: 6px; 
+}
+.ic-comment-white {
+    background: url(../img/f-comment.png) no-repeat center;
+    
+}
+.comments {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #858585;
+}
+
+/* Our Categories */
+
+.cat-list {
+    padding-left: 15px;
+    margin: 10px 0 30px 0;
+    list-style-image: url(../img/list-style.png);
+    list-style-position: inside;
+}
+.cat-list li {
+    padding: 10px 0;
+    border-bottom: 1px dotted #9fa0a1;
+}
+.cat-list li:last-child {
+    border: none;
+}
+.cat-list li a {
+    font-weight: bold;
+}
+.cat-list li span {
+    display: inline-block;
+    margin-left: 5px;
+    color: #7d7e7e;
+}
+.cat-list li a:hover {
+    text-decoration: underline;
+}
+
+/* SEARCH */ 
+.s-search {
+    position: relative;
+    margin-top: 15px;
+    padding-left: 15px;
+}
+.s-search input[type="text"]{
+    width: 100%;
+    height: 40px;
+    padding: 0 45px 0 15px;
+    display: block;
+    background: #fff;
+    border: 1px solid #e7e7e7;
+    box-shadow: 0 1px 2px rgba(0,0,0, 0.6);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0, 0.6);
+}
+.s-search input[type="text"]::-webkit-input-placeholder {
+    font-style: italic;
+    color: #c3c2c2;
+}
+.s-search input[type="text"]::-moz-placeholder {
+    font-style: italic;
+    color: #c3c2c2;
+}
+.s-search input[type="submit"] {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 0;
+    right: 2px;
+    border: none;
+    background: transparent url(../img/s-search-btn.png) no-repeat center;
+    cursor: pointer;
+}
+
+.middle {
+    padding-bottom: 300px;
+}
+
+.footer {
+    height: 300px;
+    background: #323232 url(../img/bg-footer.png) repeat;
+    margin-top: -300px; /* таким образом при любой высоте контента футер всегда будет прилипать к низу */
+    border-top: 5px solid #000;
+    padding: 25px 0;
+    position: relative;
+}
+.footer p {
+    color: #fff;
+}
+.f-about {
+    float: left;
+    width: 240px;
+    margin-right: 20px;
+}
+.f-about p {
+    margin-bottom: 20px;
+}
+.f-archives {
+    float: left;
+    width: 210px;
+    margin-right: 20px;
+}
+.f-title {
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    margin: 0 0 15px;
+}
+.f-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.f-list li {
+    padding: 10px 0;
+    border-bottom: 1px dotted #acaba9;
+}
+.f-list li:last-child {
+    border-bottom: none;
+}
+.f-list li a {
+    color: #fff;
+}
+.f-populars {
+    float: left;
+    width: 220px;
+    margin-right: 20px;
+}
+.f-populars .product-info h6 a,
+.f-populars .comments {
+    color: #fff;
+}
+.f-populars .s-img {
+    height: 80px;
+    overflow: hidden;
+}
+.f-populars .s-img img {
+    height: 100%;
+}
+.f-search {
+    float: right;
+    width: 205px;
+}
+.f-search-input {
+    border: 1px solid #333434;
+    background: rgba(0,0,0, .4);
+    color: #aaa;
+    font-size: 13px;
+    height: 35px;
+    width: 100%;
+    padding: 0 15px;
+    font-style: italic;
+    display: block;
+    margin-bottom: 20px;
+}
+.footer a.tags {
+    display: inline-block;
+    font-size: 13px;
+    color: #fff;
+    background: #2a2a2a;
+    padding: 3px 7px;
+    margin-bottom: 4px;
+}
+
+.f-social a {
+    display: inline-block;
+    background: rgba(0,0,0, 0.2) url(../img/f-sprite.png) no-repeat;
+    width: 24px;
+    height: 24px;  
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+.f-social a.s-fb {background-position: 0 0;}
+.f-social a.s-tw {background-position: -25px 0;}
+.f-social a.s-dr {background-position: -51px 0;}
+.f-social a.s-mail {background-position: -75px 0;}
+.f-social a.s-digg {background-position: -100px 0;}
+
+.f-bottom {
+    margin-top: 20px;
+    padding: 10px 0;
+    border: 2px solid #000;
+    background: #1b1b1b;
+}
+.f-bottom a, .f-bottom p {
+    font-size: 11px;
+    color: #6e6e6e;
+    text-shadow: 0 1px 1px rgba(0,0,0, 0.5);
+    -moz-text-shadow: 0 1px 1px rgba(0,0,0, 0.5);
+}
+.f-bottom a + a {
+    display: inline-block;
+    margin-left: 15px;
+}
+..f-bottom a:hover {
+    text-decoration: underline;
+}
+.home-link {
+    position: absolute;
+    top: -15px;
+    right: 30px;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    background: url(../img/home-link.png) no-repeat
+}
+
+/* Ползунок -----------------------------
+---------------------------------------*/
+.ui-slider {
+    margin-bottom: 10px;
+    position: relative;
+    text-align: left;
+}
+
+/* Ширина, высота и позиционирование для ползунков
+----------------------------------*/
+.ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 15px;
+    height: 15px;
+    cursor: default;
+    -ms-touch-action: none;
+    touch-action: none;
+    cursor:pointer;
+}
+.ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    background-position: 0 0;
+}
+
+/* support: IE8 - See #6727 */
+.ui-slider.ui-state-disabled .ui-slider-handle,
+.ui-slider.ui-state-disabled .ui-slider-range {
+    filter: inherit;
+}
+
+/* Высота горизонтальной полоски
+----------------------------------*/
+.ui-slider-horizontal {height: 6px;}
+.ui-slider-horizontal .ui-slider-handle {
+    top: -4px;
+    margin-left: -8px;
+}
+.ui-slider-horizontal .ui-slider-range {top: 0;height: 100%;}
+.ui-slider-horizontal .ui-slider-range-min {left: 0;}
+.ui-slider-horizontal .ui-slider-range-max {right: 0;}
+
+/* Ширина вертикальной полоски
+----------------------------------*/
+.ui-slider-vertical {
+    width: .8em;
+    height: 100px;
+}
+.ui-slider-vertical .ui-slider-handle {
+    left: -.3em;
+    margin-left: 0;
+    margin-bottom: -.6em;
+}
+.ui-slider-vertical .ui-slider-range {left: 0;width: 100%;}
+.ui-slider-vertical .ui-slider-range-min {bottom: 0;}
+.ui-slider-vertical .ui-slider-range-max {top: 0;}
+
+/* Указание шрифта и размера текста
+----------------------------------*/
+.ui-widget {
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 1.1em;
+}
+.ui-widget .ui-widget {
+    font-size: 1em;
+}
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+    font-family: Verdana,Arial,sans-serif;
+    font-size: 1em;
+}
+
+
+#amount, label[for="amount"] {
+	background: transparent; 
+	font-weight: normal;
+	font-size: 13px;
+	color: #2A2B2C !important;
+}
+#amount {width: 70px;}
+.btn-bl {
+	display: inline-block;
+	margin-left: 15px;
+	padding: 5px 10px;
+	font-size: 10px;
+	color:#fff;
+	text-transform: uppercase;
+	border: none;
+	background: #1e1e20;
+	cursor: pointer;
+}
+.s-slider {padding: 0 20px;}
+.s-slider p {margin-bottom: 20px;}
+/* Стилизация полоски
+----------------------------------*/
+.ui-widget-content {
+	margin: 25px 0;
+    background: #fff;
+    border-bottom: 1px solid #CECECE;
+    color: #222222;
+    
+}
+.ui-widget-content a {color: #222222;}
+
+/* Стилизация промижудка между ползунками
+----------------------------------*/
+.ui-widget-header {
+    background: #666;
+    color: #222222;
+    font-weight: bold;
+}
+.ui-widget-header a {color: #222222;}
+
+/* Стилизация ползунков 
+----------------------------------*/
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+    font-weight: normal;
+    color: #555555;
+    width: 22px;
+    height: 15px;
+    background: #cc3333;
+    -webkit-border-radius: 4px;
+            border-radius: 4px;
+}
+
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited {
+    color: #555555;
+    text-decoration: none;
+}
+
+/* Стилизация ползунка при наведении и фокусе
+----------------------------------*/
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+    font-weight: normal;
+    color: #212121;
+}
+
+/* ------ STYLE SELECT -----------------
+--------------------------------------*/
+/* Основная часть */
+.cusel {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    height: 25px;
+    font-size: 12px;
+    border: 1px solid #EAEAEA;
+    background: #fff;
+    vertical-align: middle;
+    cursor: pointer;
+}
+/* Стрелочка справа */
+.cuselFrameRight {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 20px;
+    background: url(../img/select-arrow.png) no-repeat center;
+}
+/* Текст в селекте */
+.cuselText { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 25px;
+    padding: 0 25px 0 5px; 
+    font-weight: bold;
+    font-size: 12px; 
+    line-height: 25px;
+    color: #7e7e7f;
+    cursor: pointer;
+    overflow: hidden;
+}
+* html .cuselText {height: 30px;}
+
+/* Оформление пунктов списка */
+.cusel span { 
+    display: block;
+    padding: 5px 15px; 
+    font-weight: bold;
+    font-size: 13px; 
+    zoom: 1;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* Оформление пунктов списка при наведении*/
+.cusel span:hover,
+.cusel .cuselOptHover { background: #eee;}
+
+/* Оформление активного пункта списка  */
+.cusel .cuselActive,
+.cusel .cuselActive:hover { background: #DA0612; color: #fff;}
+
+/* Оформление селекта при наведении и клике */
+.cusel:hover,
+.cusel:focus,
+.cuselFocus {background: transparent;}
+
+/* Оформление стрелки при наведении и клике */
+.cusel:hover .cuselFrameRight,
+.cusel:focus .cuselFrameRight,
+.cuselFocus .cuselFrameRight {
+    background: transparent url(../img/select-arrow.png) no-repeat center;
+}
+
+/* видимость выпадающего списка */
+.cuselOpen {z-index: 999;}
+
+/* Оформление селекта и стрелки disabled */
+.classDisCusel,
+.classDisCusel .cuselFrameRight {
+    background-image: url(../img/select-arrow.png) no-repeat center;
+    cursor: default;
+    color: #ccc;
+}
+/* Оформление текста в селекте когда он disabled */
+.classDisCusel .cuselText {
+    cursor: default;
+    color: #ccc;
+}
+
+/* Оформление выпадающего списка */
+.cusel .cusel-scroll-wrap {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: block;
+    min-width: 100%;
+    width: auto;
+    height: auto !important;
+    visibility: hidden;
+    margin-top:5px;
+    padding: 5px 0;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background: #fff;
+    overflow: hidden;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    -ms-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    -o-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+}
+.cusel .jScrollPaneContainer {
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+    background: #fff;
+}
+/* блок для элементов списка с отступом справа для скролла */
+.cusel-scroll-pane {
+    top: 5px;
+    right: 3px;
+    left: 0;
+    width: auto !important;
+}
+
+/* Линия по которой будет проходить скролл */
+.cusel .jScrollPaneTrack {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    height: 100%;
+    width: 5px !important;
+    background: #EEE;
+}
+
+/* кнопка для скролла */
+.cusel .jScrollPaneDrag {
+    position: absolute;
+    left: 0px;
+    width: 5px !important;
+    height: 27px !important;
+    background: #6E939E;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+/* эти 2 стиля не трогаем */
+.cusel .jScrollPaneDragTop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0 !important;
+    overflow: hidden;
+}
+.cusel .jScrollPaneDragBottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0 !important;
+    overflow: hidden;
+}
+
+/* Стрелка вверху для скролла */
+.cusel .jScrollArrowUp {
+    position: absolute;
+    top: 0;
+    right: 4px;
+    width: 0 !important;
+    height: 0;
+    cursor: pointer;
+    overflow: hidden;   
+}
+
+/* Стрелка внизу для скролла */
+.cusel .jScrollArrowDown {
+    width: 0 !important;
+    height: 0;
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    right: 4px;
+    cursor: pointer;
+    overflow: hidden;
+}
